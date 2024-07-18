@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Classifier App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://linkedin.com/in/celesnalo" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com/snalocele_" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/celesnalo" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+        <h1>This is a simple web application that helps you classify a triangle based on the lengths of its sides entered in centimeters (cm).</h1>
+        <hr>
+    </header>
+    <main>
+        <section id="details">
+            <h2>What is a Triangle?</h2>
+            <p>A triangle is a three-sided polygon that consists of three edges and three vertices.</p>
+            <h2>Types of Triangles</h2>
+            <p>Based on their sides, the 3 triangles are classified as equilateral triangles, isosceles triangles, and scalene triangles.</p>
+            <div id="triangles">
+                <div class="triangle-img">
+                    <h3>Isosceles</h3>
+                    <figure>
+                        <img src="assets/isosceles.png" width="100" height="100" alt="isosceles triangle">
+                        <figcaption>Only two sides measure the same.</figcaption>
+                    </figure>
+                </div>
+                <div class="triangle-img">
+                    <h3>Scalene</h3>
+                    <figure>
+                        <img src="assets/scalene.png" width="100" height="100" alt="scalene triangle">
+                        <figcaption>None of the sides measure the same.</figcaption>
+                    </figure>
+                </div>
+                <div class="triangle-img">
+                    <h3>Equilateral</h3>
+                    <figure>
+                        <img src="assets/equilateral.jpg" width="100" height="100" id="equilateral-triangle" alt="equilateral triangle">
+                        <figcaption>All the sides are equal.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="classifier">
+            <div id="inputs">
+                <form action="#" method="post">
+                    <label for="length">Side 1(cm)</label>
+                    <input type="text" id="side-1" placeholder="Enter length..." required>
+                    <br>
+                    <label for="length">Side 2(cm)</label>
+                    <input type="text" id="side-2" placeholder="Enter length..." required>
+                    <br>
+                    <label for="length">Side 3(cm)</label>
+                    <input type="text" id="side-3" placeholder="Enter length..." required>
+                    <br>
+                    <button type="button" id="submitBtn">Show Type</button>
+                </form>
+            </div>
+            <div id="results">
+                <p id="show-results">Your results will be displayed here</p>
+                <img id="result-image" src="" alt="Result Triangle" style="display:none; width:100px; height:100px;">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 | Mthobisi Snalo Cele</p>
+        <a href="https://github.com/celesnalo" target="_blank">View more projects here...</a>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
